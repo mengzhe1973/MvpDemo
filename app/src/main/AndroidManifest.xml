@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kiros.mvpdemo">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".ui.HomeActivity">
+
+        </activity>
+        <activity android:name=".statusbar.FragmentStatusbarActivity">
+
+        </activity>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--<activity android:name=".ui.SplashActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity android:name=".ui.BossActivity"/>
+        <activity android:name=".ui.staff.StaffActivity"/>
+        <activity android:name=".ui.staff.MaintenedActivity"/>
+        <activity android:name=".ui.staff.WillMaintenanceActivity"/>
+        <activity android:name=".ui.staff.OverdueMaintenanceActivity"/>
+        <activity android:name=".ui.staff.AbnormalEqActivity"/>
+        <activity android:name=".ui.staff.WorkSummaryActivity"/>
+        <activity android:name=".ui.GuideActivity"/>
+        <activity android:name=".ui.LoginRegisterActivity"/>
+        <activity android:name=".ui.UsernameLoginActivity"/>
+        <activity android:name=".ui.CodeActivity" />
+        <activity android:name=".ui.EvaluateActivity"/>
+        <activity android:name=".ui.FeedbackActivity"/>
+        <activity android:name=".ui.LoginActivity"/>
+        <activity android:name=".ui.RegisterActivity"/>
+        <activity android:name=".ui.EvaluateListActivity"/>
+        <activity android:name=".ui.GuaranteeActivity"/>
+        <activity android:name=".ui.staff.MaintenanceActivity"/>
+        <activity android:name=".ui.CuringActivity"/>
+        <activity android:name=".ui.CurDetailActivity"/>
+        <activity android:name=".ui.EqRunActivity"/>
+        <activity android:name=".ui.InfringementActivity"/>
+
+        <!--<activity android:name=".statusbar.FragmentStatusbarActivity"/>-->
+        <activity android:name=".statusbar.FullScreenHaveStatusActivity"/>
+        <activity android:name=".statusbar.StatusBarTextColorActivity"/>
+        <activity android:name=".statusbar.StatusBarTextColor2Activity"/>
+    </application>
+
+</manifest>

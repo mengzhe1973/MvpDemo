@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:background="@drawable/home_bg"
+        android:paddingBottom="@dimen/dp_50"
+        android:paddingTop="@dimen/dp_10">
+
+
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="被评价人: "
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张大宝"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/color_333333"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:background="@drawable/edit_bg"
+            android:gravity="top"
+            android:hint="请输入您的评价内容"
+            android:lines="8"
+            android:padding="@dimen/dp_10"
+            android:layout_below="@id/name"
+            android:textColorHint="@color/color_999999"/>
+
+        <ImageView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/edit_text"
+            android:layout_alignRight="@id/edit_text"
+            android:layout_margin="@dimen/dp_10"
+            android:src="@mipmap/feedback" />
+
+
+        <LinearLayout
+            android:id="@+id/service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_text"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="服务态度"
+                android:textColor="#666"
+                android:textSize="@dimen/sp_16" />
+
+            <com.kiros.mvpdemo.widget.StarBar
+                android:id="@+id/service_starBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ratingbar:starCount="5"
+                ratingbar:starDistance="5dp"
+                ratingbar:starEmpty="@mipmap/star_empty"
+                ratingbar:starFill="@mipmap/star_full"
+                ratingbar:starSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/technology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="维保技术"
+                android:textColor="#666"
+                android:textSize="@dimen/sp_16" />
+
+            <com.kiros.mvpdemo.widget.StarBar
+                android:id="@+id/technology_starBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ratingbar:starCount="5"
+                ratingbar:starDistance="5dp"
+                ratingbar:starEmpty="@mipmap/star_empty"
+                ratingbar:starFill="@mipmap/star_full"
+                ratingbar:starSize="30dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_70"
+        android:background="@drawable/btn_blue"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="提 交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20" />
+
+</LinearLayout>

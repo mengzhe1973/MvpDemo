@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingBar">
+        <!--星星间距-->
+        <attr name="starDistance" format="dimension" />
+        <!--星星大小-->
+        <attr name="starSize" format="dimension" />
+        <!--星星个数-->
+        <attr name="starCount" format="integer" />
+        <!--星星空图-->
+        <attr name="starEmpty" format="reference" />
+        <!--星星满图-->
+        <attr name="starFill" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="switchButton">
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="android:background" />
+        <attr name="sw_textArray" format="string" />
+        <attr name="sw_switchCount" format="integer" />
+        <attr name="sw_ThemeStyle" format="reference" />
+        <attr name="sw_CornerRadius" format="dimension" />
+        <attr name="sw_checkedColor" format="color|reference" />
+        <attr name="sw_unCheckedColor" format="color|reference" />
+        <attr name="sw_strokeColor" format="color|reference" />
+        <attr name="sw_strokeWidth" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">聚焦App</string>
+    <string name="phone_num">请输入您的手机号码</string>
+    <string name="phone_password">请输入您的账号密码</string>
+    <string name="set_password">请输入您的密码</string>
+    <string name="verification_code">请输入您的验证码</string>
+    <string name="phone_pwd">请输入您的密码</string>
+    <string name="new_pwd">请输入新密码</string>
+    <string name="next">下一步</string>
+    <string name="ok">确 定</string>
+</resources>
